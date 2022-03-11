@@ -15,7 +15,7 @@ function PublicLayout(){
             </div>
             <Routes>
                 <Route exact path="/" element={<SignIn/>} />
-                <Route exact path="/singup" element={<SignUp/>} />
+                <Route exact path="/signup" element={<SignUp/>} />
             </Routes>
         </div>
     );

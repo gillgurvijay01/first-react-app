@@ -20,7 +20,8 @@ function SignIn() {
                                 <a href="forget-password.html">Forgot Password</a>
                             </div>
                             <button type="submit" className="btn btn-primary py-3 w-100 mb-4">Sign In</button>
-                            <p className="text-center mb-0">Don't have an Account? <a href="">Sign Up</a></p>
+                            <p className="text-center mb-0">Don't have an Account? <a href="signup">Sign Up</a>
+</p>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-function SignIn() {
+function SignUp() {
     return (
             <div className="container-fluid">
                 <div className="row h-100 align-items-center justify-content-center" style={{minHeight: "100vh"}}>
@@ -24,7 +24,7 @@ function SignIn() {
                                 <a href="forget-password.html">Forgot Password</a>
                             </div>
                             <button type="submit" className="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
-                            <p className="text-center mb-0">Already have an Account? <a href="signin.html">Sign In</a></p>
+                            <p className="text-center mb-0">Already have an Account? <a href="signin">Sign In</a></p>
                         </div>
                     </div>
                 </div>
@@ -32,4 +32,4 @@ function SignIn() {
         );  
 }
 
-export default SignIn;
+export default SignUp;
