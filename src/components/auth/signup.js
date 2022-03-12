@@ -24,7 +24,7 @@ function SignUp() {
                                 <a href="forget-password.html">Forgot Password</a>
                             </div>
                             <button type="submit" className="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
-                            <p className="text-center mb-0">Already have an Account? <a href="signin">Sign In</a></p>
+                            <p className="text-center mb-0">Already have an Account? <a href="/">Sign In</a></p>
                         </div>
                     </div>
                 </div>

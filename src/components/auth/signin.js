@@ -17,7 +17,7 @@ function SignIn() {
                                 <i className="fa fa-eye" style={{bottom:"35px !important"}}></i>
                             </div>
                             <div className="d-flex align-items-center justify-content-between mb-4">
-                                <a href="forget-password.html">Forgot Password</a>
+                                <a href="/forget-password">Forgot Password</a>
                             </div>
                             <button type="submit" className="btn btn-primary py-3 w-100 mb-4">Sign In</button>
                             <p className="text-center mb-0">Don't have an Account? <a href="signup">Sign Up</a>
