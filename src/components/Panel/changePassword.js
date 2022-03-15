@@ -4,20 +4,20 @@ function ChangePassword() {
             <div className="row g-4">
                 <div className="col-12">
                 <div className="bg-light rounded h-100 p-4">
-                    <h6 className="mb-4">Create User</h6>
+                    <h6 className="mb-4">Change Password</h6>
                     <form>
                     <div className="mb-3">
-                        <label htmlFor="oldPassword" className="form-label">Password</label>
+                        <label htmlFor="oldPassword" className="form-label">Current Password</label>
                         <input type="password" name="oldPassword" className="form-control" id="oldPassword" />
                         <i className="fa fa-eye" />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="newPassword" className="form-label">Password</label>
+                        <label htmlFor="newPassword" className="form-label">New Password</label>
                         <input type="password" name="newPassword" className="form-control" id="newPassword" />
                         <i className="fa fa-eye" />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="currentPassword" className="form-label">Password</label>
+                        <label htmlFor="currentPassword" className="form-label">Confirm Password</label>
                         <input type="password" name="currentPassword" className="form-control" id="currentPassword" />
                         <i className="fa fa-eye" />
                     </div>

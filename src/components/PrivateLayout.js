@@ -4,10 +4,10 @@ import SideBar from './Panel/sidebar';
 import Header from './Panel/header';
 import Spinner from './Panel/spinner';
 import ChangePassword from './Panel/changePassword';
-import User from "./Panel/user";
-import Roles from "./Panel/role";
-
-
+import User from "./Panel/users";
+import Roles from "./Panel/roles";
+import CreateUser from "./Panel/createUser";
+import CreateRole from "./Panel/createRole";
 
 function PrivateLayout() {
     return (
@@ -28,8 +28,11 @@ function PrivateLayout() {
                 <Routes>
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/change-password" element={<ChangePassword />} />
-                    <Route path="/user" element={<User />} />
+                    <Route path="/users" element={<User />} />
                     <Route path="/roles" element={<Roles />} />
+                    <Route path="/create-user" element={<CreateUser />} />
+                    <Route path="/create-role" element={<CreateRole />} />
+                
                 </Routes>
             </div>
 

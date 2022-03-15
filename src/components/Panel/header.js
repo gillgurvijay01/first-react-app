@@ -4,7 +4,7 @@ function Header() {
             <a href="index.html" className="navbar-brand d-flex d-lg-none me-4">
             <h2 className="text-primary mb-0"><i className="fa fa-hashtag" /></h2>
             </a>
-            <a href="w" className="sidebar-toggler flex-shrink-0">
+            <a className="sidebar-toggler flex-shrink-0">
             <i className="fa fa-bars" />
             </a>
             <div className="navbar-nav align-items-center ms-auto">
