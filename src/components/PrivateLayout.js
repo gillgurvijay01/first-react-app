@@ -4,6 +4,10 @@ import SideBar from './Panel/sidebar';
 import Header from './Panel/header';
 import Spinner from './Panel/spinner';
 import ChangePassword from './Panel/changePassword';
+import User from "./Panel/user";
+import Roles from "./Panel/role";
+
+
 
 function PrivateLayout() {
     return (
@@ -24,8 +28,8 @@ function PrivateLayout() {
                 <Routes>
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/change-password" element={<ChangePassword />} />
-                    <Route path="/users" element={<ChangePassword />} />
-                    <Route path="/roles" element={<ChangePassword />} />
+                    <Route path="/user" element={<User />} />
+                    <Route path="/roles" element={<Roles />} />
                 </Routes>
             </div>
 
