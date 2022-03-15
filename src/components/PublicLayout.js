@@ -2,7 +2,7 @@ import { Routes,Route } from "react-router-dom";
 import SignIn from "./auth/signin";
 import SignUp from "./auth/signup";
 import ForgetPassword from "./auth/forgetPassword";
-
+import ChangePassword from "./auth/changePassowrd";
 
 function PublicLayout() {
     return (
@@ -16,6 +16,7 @@ function PublicLayout() {
                 <Route path="/" element={<SignIn />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/forget-password" element={<ForgetPassword />} />
+                <Route path="/reset-password" element={<ChangePassword/>}/>
             </Routes>
 
         </div>
