@@ -46,6 +46,7 @@ class User extends React.Component {
                                             </thead>
                                             <tbody>
                                                 {this.state.users.map(item => 
+                                                
                                                     <tr>
                                                         <th scope="row">{ item.id }</th>
                                                         <th scope="row" className="text-center">{ item.name }</th>
