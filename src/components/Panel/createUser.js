@@ -1,49 +1,49 @@
-import React from "react";
+import React,{ useState } from "react";
 import axios from "axios";
 
-class CreateUser extends React.Component {
-    constructor() {
-        super()
-        this.state = { form: {}};
-    }
 
-    componentDidMount() {
-        
-    }
+const CreateUser = () => {
+    const [getForm, setForm] = useState({ form: {} });
 
-    CreateUser = (e) => {
+    const createUser = (e) => {
         e.preventDefault();
-        console.log(this.state.form)
-    }
 
-    handleChange = (event) => {
-        var form = {}
-        form[event.target.name] = event.target.value
-        var newForm = {...form, ...this.state.form}
-        this.setState({ form: newForm });
+        console.log(getForm.form)
+        // delete this.state.form['password']
+        // axios.post("https://gorest.co.in/public/v2/users?access-token=react",this.state.form, this.state.config)
+        // .then((response)=> {
+        //     console.log(response)
+        // })
+        // .catch(function(error) {
+        //     console.log(error);
+        // });
     }
     
+    const handleChange = (event) => {
+        var newform = {}
+        newform[event.target.name] = event.target.value
+        var newForm = { ...getForm.form, ...newform }
+        setForm({ form: newForm });
+    }
 
-    render() {
-        return (
-            <div className="container-xxl position-relative bg-white d-flex p-0">
+    return (<div className="container-xxl position-relative bg-white d-flex p-0">
                 <div className="container-fluid pt-4 px-4">
                     <div className="row g-4">
                         <div className="col-12">
                             <div className="bg-light rounded h-100 p-4">
                                 <h6 className="mb-4">Create User</h6>
-                                <form onSubmit={this.CreateUser}>
+                                <form onSubmit={createUser}>
                                     <div className="mb-3">
                                         <label htmlFor="name" className="form-label">Full Name</label>
-                                        <input type="text" name="name" onChange={this.handleChange}  className="form-control" id="name" aria-describedby="emailHelp" />
+                                        <input type="text" name="name" onChange={handleChange}  className="form-control" id="name" aria-describedby="emailHelp" />
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="email" className="form-label">Email address</label>
-                                        <input type="email" name="email" onChange={this.handleChange}  className="form-control" id="email" aria-describedby="emailHelp" />
+                                        <input type="email" name="email" onChange={handleChange}  className="form-control" id="email" aria-describedby="emailHelp" />
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="password" className="form-label">Password</label>
-                                        <input type="password" name="password" onChange={this.handleChange}  className="form-control" id="password" />
+                                        <input type="password" name="password" onChange={handleChange}  className="form-control" id="password" />
                                     </div>
                                     <button type="submit" className="btn btn-primary">Submit</button>
                                 </form>
@@ -52,7 +52,10 @@ class CreateUser extends React.Component {
                     </div>
                 </div>
             </div>
-        )
-    } ;
+    )
+    
 }
+
+
+
 export default CreateUser;
