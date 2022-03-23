@@ -3,12 +3,13 @@ import axios from "axios";
 
 
 const CreateUser = () => {
-    const [getForm, setForm] = useState({ form: {} });
+    const [getForm, setForm] = useState({});
+    const [title, setTitle] = useState('Create User');
 
     const createUser = (e) => {
         e.preventDefault();
 
-        console.log(getForm.form)
+        console.log(getForm)
         // delete this.state.form['password']
         // axios.post("https://gorest.co.in/public/v2/users?access-token=react",this.state.form, this.state.config)
         // .then((response)=> {
@@ -22,8 +23,7 @@ const CreateUser = () => {
     const handleChange = (event) => {
         var newform = {}
         newform[event.target.name] = event.target.value
-        var newForm = { ...getForm.form, ...newform }
-        setForm({ form: newForm });
+        setForm({ ...getForm, ...newform });
     }
 
     return (<div className="container-xxl position-relative bg-white d-flex p-0">
@@ -55,7 +55,5 @@ const CreateUser = () => {
     )
     
 }
-
-
 
 export default CreateUser;
