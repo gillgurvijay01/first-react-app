@@ -1,18 +1,19 @@
 import { useState } from 'react'
+import Store from '../store'
 
 function Demo() {
     // State: a counter value
     const [counter, setCounter] = useState(0)
+    const action    = { type: 'counter/incremented' }
 
-    // Action: code that causes an update to the state when something happens
-    const increment = () => {
-        setCounter(prevCounter => prevCounter + 1)
-    }
+    var selectCurrentValue      = state => state.value; 
+    const currentValue          = selectCurrentValue(Store.getState())
+
 
     // View: the UI definition
     return (
         <div>
-            Value: {counter} <button onClick={increment}>Increment</button>
+            Value: {currentValue} <button onClick={Store.dispatch({ type: 'counter/incremented' })}>Increment</button>
         </div>
     )
 }

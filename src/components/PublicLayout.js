@@ -4,6 +4,7 @@ import SignUp from "./auth/signup";
 import ForgetPassword from "./auth/forgetPassword";
 import ResetPassword from "./auth/resetPassowrd";
 import Demo from './demo'
+import Test from './test'
 
 function PublicLayout() {
     return (
@@ -18,7 +19,8 @@ function PublicLayout() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/forget-password" element={<ForgetPassword />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
-                <Route path="/demo" element={<Demo/>}/>
+                <Route path="/demo" element={<Demo />} />
+                <Route path="/test" element={<Test/>} />
             </Routes>
 
         </div>
