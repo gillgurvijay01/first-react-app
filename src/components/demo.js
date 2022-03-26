@@ -13,7 +13,7 @@ function Demo() {
     // View: the UI definition
     return (
         <div>
-            Value: {currentValue} <button onClick={Store.dispatch({ type: 'counter/incremented' })}>Increment</button>
+            Value: {currentValue} <button onClick={ } ={Store.dispatch({ type: 'counter/incremented' })}>Increment</button>
         </div>
     )
 }
