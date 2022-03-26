@@ -4,5 +4,4 @@ import CounterReducer from './reducers/counterReducer'
 const Store = configureStore({
     reducer: CounterReducer
 })
-  
 export default Store
